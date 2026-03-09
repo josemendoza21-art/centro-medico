@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas-Centro de Salud</title>
+</head>
+<body>
+    <header>
+        <h1>Citas Medicas - Asesores</h1>
+        <p>Introdusca sus datos para reservarle una cita medica, para poder comunicarle con un asesor.<br>
+        sera la persona quien le dara mas informacion sobre su solicitud y a completar datos faltantes.</p>
+    </header>
+<section>
+     <form action="recepcion_citas.html" method="get">
+    <fieldset>
+        <legend>Solicitud de Cita Medica</legend>
+        <br>
+    <label for="Ingresar Fecha">Ingresar Fecha :</label>
+    <input type="date" id="Ingresar Fecha" name="Fecha" required>
+    <br><br>
+    <label>Cliente:</label>
+    <input type="text" name="Cliente" required>
+    <br><br>
+    <label >DNI:</label>
+    <input type="text" name="DNI" pattern="[0-9]{8}" required>
+    <br><br>
+    <label for="Numero Whatsapp">Numero Whatsapp :</label>
+    <input type="tel" name="Numero de Whatsapp" id="Numero Whatsapp" placeholder="Ingrese su Numero" required>
+    <br><br>
+    <label for="Servicio Medico">Servicio Medico : </label>
+    <select id="Servicio Medico" required name="Servicio Medico">
+    <option value="Medicina general">Medicina general</option>
+    <option value="Odontologia">Odontologia </option>
+    <option value="Pediatria">Pediatria</option>
+    <option value="Ginecologia">Ginecologia</option>
+    <option value="Psicologo">Psicologo</option>
+    <option value="Pediatria">Pediatria</option>
+    <option value="Imagenes medicas">Imagenes medicas</option>
+    <option value="Laboratorio">Laboratorio</option>
+    </select>
+<br><br>
+<button type="submit">Enviar</button>
+<button type="reset">Reiniciar Datos</button>
+</fieldset>
+</form>
+<section>
+    <h2>Instrucciones para solicitar una cita medica : </h2>
+    <p>Siga las instrucciones para poder solicitar la cita deseada.</p>
+    <video width="300" height="300" controls loop autoplay>
+        <source src="video/instruccion_cita.mp4" type="video/mp4" >
+    </video>
+</section>
+<br><br>
+<footer>
+    <img src="img1/cita.jpg" width="300" height="300">
+    <img src="img1/cita2.jpg" width="300" height="300">
+    <img src="img1/cita3.jpg" width="300" height="300">
+</footer>
+</section>
+</body>
+</html>

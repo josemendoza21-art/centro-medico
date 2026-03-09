@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Centro de Salud</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Centro de Salud </h1>
+            <p>Hola, gracias por visitar mi página. Aquí podrás encontrar información,<br>
+            registrarte o iniciar sesión para acceder a más contenido.</p>
+            <a href="registro.html">Registrarse</a><br><br>
+        </header>
+    <section>
+        <form action="pagina_principal.html" method="get">
+            <fieldset>
+                <legend>Introdusca sus Datos</legend>
+                <label for="Nombre">Nombre</label>
+                <input id="Nombre" name="Usuario" type="text" placeholder="Ingrese su nombre" required>
+                <br><br>
+                <label for="DNI">DNI</label>
+                <input type="text" name="DNI" id="DNI" placeholder="Ingrese su Documento" pattern="[0-9]{8}" required>
+                <br><br>
+                <label for="Correo">Correo Electronico :</label>
+                <input id="Correo" name="Correo Electronico" type="email" placeholder="Ingrese su Email" required>
+                <br><br>
+                <label for="Contraseña">Contraseña :</label>
+                <input id="Contraseña" name="Contraseña" placeholder="Ingrese la contraseña" type="password" pattern=".{6,12}" required>
+                <br><br>
+                <label for="Seleccione su Ingreso">Seleccione su Ingreso : </label>
+                <select name="Ingreso del Personal">
+                    <option value="Paciente">Paciente</option>
+                    <option value="Personal Medico">Personal Medico</option>
+                </select>
+                <br><br>
+                <label for="Casilla de Verificacion">Acepta los terminos y condiciones:</label>
+                <input type="checkbox" required>
+                <br><br>
+                <button type="reset">Reiniciar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <img src="img/WhatsApp-Image-2023-08-01-at-9.16.02-PM.jpg" alt="centro" width="300" height="240">
+            <img src="img/descarga (1).jpg" alt="ubicacion" width="300" height="240">
+            <img src="img/descarga.jpg" alt="centro de salud" width="300" height="240">
+        </div>
+    </footer>
+    </body>
+</html>
